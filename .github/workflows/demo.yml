@@ -1,4 +1,4 @@
-name: CI_CD
+name: Print
 on:   workflow_dispatch
 jobs: 
   print: 
@@ -6,7 +6,11 @@ jobs:
     steps:
       - name: Print to console
         run: echo Hello GitHub Actions!
-    
+      - name: Print few lines
+        run: 
+          echo first line
+          echo second line
+      
       
 
 
